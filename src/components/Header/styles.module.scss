@@ -1,6 +1,7 @@
 .headerContainer {
   height: 5rem;
   border: 1px solid var(--gray-800);
+  
 }
 
 .headerContent {
@@ -12,9 +13,20 @@
   display: flex;
   align-items: center;
 
+  @media (max-width: 525px) {
+    img {
+      display: none;
+    }
+  }
+
+
   nav {
     margin-left: 5rem;
     height: inherit;
+
+    @media (max-width: 525px) {
+      margin-left: 0;
+    }
 
     a {
       display: inline-block;
@@ -28,6 +40,11 @@
 
       & + a {
         margin-left: 2rem;
+
+        @media (max-width: 525px) {
+          margin-left: 1rem;
+        }
+    
       }
 
       &:hover {

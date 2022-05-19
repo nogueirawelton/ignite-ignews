@@ -11,6 +11,12 @@
   font-weight: bold;
   transition: filter .3s;
 
+  @media (max-width: 768px) {
+    span {
+      display: none;
+    }
+  }
+
   &:hover {
     filter: brightness(.8)
   }
