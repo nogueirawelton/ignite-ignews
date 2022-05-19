@@ -1,6 +1,5 @@
 import { SignInButton } from './SignInButton';
 import styles from './styles.module.scss';
-import Image from 'next/image';
 import { ActiveLink } from './ActiveLink';
 
 export const Header = () => {
